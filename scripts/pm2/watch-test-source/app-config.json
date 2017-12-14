@@ -1,0 +1,24 @@
+{
+	"apps" : [
+		{
+			"name"             : "watch-test-source",
+			"script"           : "scripts/mocha/execute-mocha-then-wait.sh",
+			"args"             : [ ],
+			"exec_interpreter" : "bash",
+			"cwd"              : ".",
+			"watch"            : [
+				"scripts/*",
+				"scripts/**/*",
+				"node_modules/@c2cs/sls-tools/lib/**/*.js",
+				"lib/**/*.js",
+				"package.json"
+			],
+			"ignore_watch": [],
+			"watch_options"    : {
+				"usePolling": true,
+				"interval": 600,
+				"followSymlinks": true
+			}
+		}
+	]
+}

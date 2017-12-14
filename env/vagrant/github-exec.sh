@@ -4,7 +4,7 @@
 # and executes them.  It goes without saying that the source repository must be
 # trusted.
 #
-# Author: Luke Chavers <luke@chavers.io>
+# Author: Luke Chavers <me@lukechavers.com>
 #
 
 # Static Settings

@@ -10,6 +10,9 @@
 		"email": "me@lukechavers.com",
 		"url": ""
 	},
+	"scripts": {
+		"testw": "./scripts/pm2/watch-test-source/do-pm2-action.sh"
+	},
 	"contributors": [
 		{
 			"name": "Luke Chavers",
@@ -20,5 +23,14 @@
 	"publishConfig": {
 		"registry": "https://registry.npmjs.org/"
 	},
-	"keywords": []
+	"keywords": [],
+	"dependencies": {
+		"eyes": "^0.1.8",
+		"lodash": "^4.17.4",
+		"tipe": "^0.1.12"
+	},
+	"devDependencies": {
+		"chai": "^4.1.2",
+		"mocha": "^4.0.1"
+	}
 }
