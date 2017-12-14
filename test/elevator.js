@@ -27,6 +27,9 @@ describe.only("Elevator", function() {
 			expect( elevator.isDoorsOpen ).to.equal( false );
 			expect( elevator.totalSteps ).to.equal( 0 );
 
+			// Private Variables
+			expect( elevator._loggingEnabled ).to.equal( false );
+
 		});
 
 		it("should count steps", function() {
@@ -58,6 +61,38 @@ describe.only("Elevator", function() {
 
 			expect( elevator.currentFloor ).to.equal( 1 );
 			expect( elevator.isDoorsOpen ).to.equal( true );
+
+		});
+
+		it("should always spend a step closing its doors", function() {
+
+			elevator.addPickup( 1 );
+			elevator.step( 2 );
+
+			expect( elevator.currentFloor ).to.equal( 1 );
+			expect( elevator.isDoorsOpen ).to.equal( false );
+
+		});
+
+		it("should idle if drop-off instructions are not given", function() {
+
+			elevator.addPickup( 1 );
+			elevator.step( 2 );
+
+			expect( elevator.enRoute ).to.equal( false );
+
+		});
+
+		it("should properly track when it is en route", function() {
+
+			elevator.enableLogging();
+
+			elevator.addPickup( 1 );
+			elevator.step();
+			elevator.addDropOff( 3 );
+			elevator.step( 5 );
+
+			//expect( elevator.enRoute ).to.equal( false );
 
 		});
 
