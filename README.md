@@ -1,1 +1,4 @@
-# elevator-sim
+elevator-simulation
+==========================================
+
+An elevator simulation

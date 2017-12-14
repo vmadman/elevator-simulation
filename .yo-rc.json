@@ -1,0 +1,13 @@
+{
+  "@lukechavers/generator-luke": {
+    "projectName": "elevator-simulation",
+    "projectDesc": "An elevator simulation",
+    "projectVersion": "0.1.0",
+    "fullName": "Luke Chavers",
+    "emailAddress": "me@lukechavers.com",
+    "githubOwner": "vmadman",
+    "gitRepoName": "elevator-simulation",
+    "vagrantPortStart": 5036,
+    "vagrantPortCount": 3
+  }
+}

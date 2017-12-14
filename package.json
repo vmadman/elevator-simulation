@@ -1,32 +1,24 @@
 {
-  "name": "elevator-sim",
-  "version": "0.1.0",
-  "description": "An elevator and control simulator",
-  "main": "lib/main.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/github.com/vmadman/elevator-sim.git"
-  },
-  "keywords": [
-    "elevator",
-    "simulation"
-  ],
-  "author": "Luke Chavers <me@lukechavers.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/vmadman/elevator-sim/issues"
-  },
-  "homepage": "https://github.com/vmadman/elevator-sim#readme",
-  "dependencies": {
-    "bluebird": "^3.5.1",
-    "eyes": "^0.1.8",
-    "lodash": "^4.17.4",
-    "tipe": "^0.1.12",
-    "verror": "^1.10.0"
-  },
-  "devDependencies": {
-    "chai": "^4.1.2",
-    "mocha": "^4.0.1"
-  }
+	"name": "elevator-simulation",
+	"version": "0.1.0",
+	"description": "An elevator simulation",
+	"main": "lib/index.js",
+	"license": "MIT",
+	"repository": "https://github.com/vmadman/elevator-simulation",
+	"author": {
+		"name": "Luke Chavers",
+		"email": "me@lukechavers.com",
+		"url": ""
+	},
+	"contributors": [
+		{
+			"name": "Luke Chavers",
+			"email": "me@lukechavers.com",
+			"url": ""
+		}
+	],
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/"
+	},
+	"keywords": []
 }
