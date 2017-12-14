@@ -98,7 +98,18 @@ describe("Elevator", function() {
 
 		});
 
-		it.skip("should properly track when it is en route", function() {
+		it.skip("should do more..", function() {
+
+			elevator.enableLogging();
+
+			elevator.addPickup( 1 );
+			elevator.step( 2 );
+			elevator.addDropOff( 3 );
+			elevator.step( 2 );
+			elevator.addPickup( 2 );
+			elevator.step( 2 );
+			elevator.addDropOff( 1 );
+			elevator.step( 5 );
 
 			// I stopped adding tests here for the sake of time, and
 			// because the challenge instructions did not require the
