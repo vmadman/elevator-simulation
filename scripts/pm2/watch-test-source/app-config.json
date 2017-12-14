@@ -9,7 +9,8 @@
 			"watch"            : [
 				"scripts/*",
 				"scripts/**/*",
-				"node_modules/@c2cs/sls-tools/lib/**/*.js",
+				"test/*",
+				"test/**/*",
 				"lib/**/*.js",
 				"package.json"
 			],

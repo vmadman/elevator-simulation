@@ -5,7 +5,7 @@ SERVICE_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )/../.." && pwd )"
 NODE_BIN_PATH="$(which node)"
 MOCHA_EXEC_CWD="$SERVICE_ROOT/lib"
 
-MOCHA_REL_PATH="node_modules/@c2cs/sls-tools/node_modules/mocha/bin"
+MOCHA_REL_PATH="node_modules/mocha/bin"
 MOCHA_PATH="$SERVICE_ROOT/$MOCHA_REL_PATH"
 
 MOCHA_SCRIPT_NAME="mocha"
@@ -15,7 +15,7 @@ MOCHA_EXECUTABLE="$MOCHA_PATH/$MOCHA_SCRIPT_NAME"
 MOCHA_DEFAULT_TIMEOUT="5000"
 MOCHA_SLOW_THRESHOLD="300"
 
-MOCHA_AR_REL_PATH="node_modules/@c2cs/sls-tools/lib/test/mocha-endpoint-test-helper.js"
+MOCHA_AR_REL_PATH="test/_globals.js"
 MOCHA_AUTO_REQUIRE="$SERVICE_ROOT/$MOCHA_AR_REL_PATH"
 
 # This Mocha glob pattern includes ...
@@ -23,8 +23,7 @@ MOCHA_AUTO_REQUIRE="$SERVICE_ROOT/$MOCHA_AR_REL_PATH"
 # Except for ...
 #   - Files in test/lib, and
 #   - Files prefixed with an underscore.
-#MOCHA_TEST_PATH="./test/{,!(lib)/**/}!(_).js"
-MOCHA_TEST_PATH="./**/test/!(_).js"
+MOCHA_TEST_PATH="../test/!(_)*.js"
 
 
 # Helper to show Mocha execution variables

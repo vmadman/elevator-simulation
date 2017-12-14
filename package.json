@@ -25,6 +25,7 @@
 	},
 	"keywords": [],
 	"dependencies": {
+		"bluebird": "^3.5.1",
 		"eyes": "^0.1.8",
 		"lodash": "^4.17.4",
 		"tipe": "^0.1.12"
